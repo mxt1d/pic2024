@@ -1,0 +1,295 @@
+main{
+  max-width: 450px;
+  min-height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.TandiMessage {
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #afafaf;
+  margin-top: 20px;
+  line-height:30px;
+  }
+.TandiMessage p {
+    margin: 0.0em 0;
+}
+.TandiMessage p:nth-child(1) {text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#F55D16;}
+.TandiMessage p:nth-child(2) {text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#22AD72;}
+.TandiMessage p:nth-child(3) {text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#2DA9AB;}
+.TandiMessage p:nth-child(4) {text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#C73ED3;}
+.TandiMessage p:nth-child(5) {text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#80F1F1;}
+.TandiMessage p:nth-child(6) {text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#DB1C68;}
+.demo {
+  font-size: 11;
+  font-weight: none;
+  color: #98201f;
+  animation: flash 0s infinite;
+}
+.leftcurtain {
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+}
+.rightcurtain {
+  width: 50%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 3;
+}
+.rightcurtain img,
+.leftcurtain img {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  margin: 0px auto;
+  margin-top: 150px;
+}
+.rope {
+  position: absolute;
+  top: 5px;
+  left: 33%;
+  z-index: 4;
+}
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rope a{
+  text-decoration: none;
+}
+.m1 {
+  position: fixed;
+  left: 1%;
+  width: auto;
+  height: 100%;
+  top: 1%;
+  color: #000;
+}
+.m2 {
+  position: fixed;
+  right: 1%;
+  width: auto;
+  height: 100%;
+  top: 1%;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.shareBtn {
+  position: fixed;
+  right: calc(50% - 145px);
+  bottom: 5px;
+  width: 300px;
+  height: 60px;
+  background-color: #007f00;
+  border-radius: 100px;
+  color: white;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+  animation: footer infinite linear 1s;
+  transition: all 0.3s cubic-bezier(0.67, 0.13, 0.1, 0.81),
+    transform 0.15s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+.shareShow {
+  position: fixed;
+  right: calc(50% - 45px);
+  bottom: 5px;
+  width: 100px;
+  height: 60px;
+  background-color: brown;
+  border-radius: 100px;
+  color: white;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.67, 0.13, 0.1, 0.81),
+    transform 0.15s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+.platforms {
+  position: fixed;
+  right: calc(50% - 145px);
+  height: 100px;
+  width: 300px;
+  bottom: 65px;
+  border-radius: 5px;
+  visibility: hidden;
+  transform: scale(0.9);
+  overflow: hidden;
+}
+.platforms:target {
+  visibility: visible;
+  transform: scale(1);
+  opacity: 1;
+}
+.platforms a {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  color: #3f8efc;
+  text-transform: uppercase;
+}
+.platforms a:nth-child(1) {
+  background-color: #1a5276;
+  left: 60px;
+}
+.platforms a:nth-child(2) {
+  background-color: #1a5276;
+  left: 155px;
+}
+.platforms:target a {
+  top: 5px;
+}
+.platforms a:hover {
+  background: #000000;
+  box-shadow: 0 0 0 1px #a5cfff;
+}
+.platforms a:before {
+  content: attr(data-os);
+  position: absolute;
+  color: white;
+  bottom: 5px;
+  left: 0px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+form {
+  position: fixed;
+  bottom: -15;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+}
+form input[type="text"] {
+  float: left;
+  width: 69%;
+  height: 60px;
+  background-color: #1b488b;
+  border-radius: 10px;
+  border: 3px solid #f76d2d;
+  color: #fff;
+  font-size: 18px;
+}
+form input::placeholder {
+  color: white;
+  text-align: center;
+}
+form input[type="submit"] {
+  width: 29%;
+  height: 60px;
+  cursor: pointer;
+  animation: nudge 2s linear infinite alternate;
+  background: #d432e1;
+  border: 3px solid #f76d2d;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 22px;
+}
+@keyframes nudge {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+}
+#show-name {
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 5px;
+  animation: swing 1s infinite, glow 20s infinite; }
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 30px red; }
+  25% {
+    text-shadow: 0 0 30px orange; }
+  50% {
+    text-shadow: 0 0 30px forestgreen; }
+  75% {
+    text-shadow: 0 0 30px cyan; } }
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size: 25px;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  40% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  40% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
